@@ -89,7 +89,7 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                     <a href="http://127.0.0.1:8000/categories">Categories</a>
-                    <a href="http://127.0.0.1:8000/articles">Articles</a>
+                    <a href="http://127.0.0.1:8000/products">Products</a>
 
                 </div>
             </div>

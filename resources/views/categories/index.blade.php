@@ -8,12 +8,9 @@
         <div class="card-header">Categories</div>
         <div class="card-body">
           <ul>
-           
-
             @foreach ($categories as $cat)
-            <li>{{ $cat->name }} </li>
+            <li><a href="{{ action('categoryController@display', $cat->id) }}">{{ $cat->name }}</a></li>
             @endforeach
-
           </ul>
         </div>
       </div>
