@@ -9,7 +9,7 @@
         <div class="card-body">
           <ul>
             @foreach ($categories as $cat)
-            <li><a href="{{ action('categoryController@display', $cat->id) }}">{{ $cat->name }}</a></li>
+            <li><a href="{{ action('CategoryController@display', $cat->id) }}">{{ $cat->name }}</a></li>
             @endforeach
           </ul>
         </div>

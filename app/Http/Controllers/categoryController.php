@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Categories;
-use App\products;
+use App\Products;
 
 
 
@@ -21,6 +21,7 @@ class categoryController extends Controller
 	{
 		
 		$categories = Categories::findOrFail($id);
+		
      	return view('categories.category_products', compact('categories'));
 
 

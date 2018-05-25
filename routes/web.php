@@ -21,12 +21,15 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
  //voor Categories
- Route::get('/categories', 'categoryController@index');
- Route::get('categories/{id}/products', 'categoryController@display');
+ Route::get('/categories', 'CategoryController@index');
+ Route::get('categories/{id}/products', 'CategoryController@display');
  
 
 
 //voor articles
  route::get('/products', 'ProductsController@index');
  Route::get('products/{id}/details', 'ProductsController@display');
+
+ //voor shoppingcart
+Route::get('products/{id}', 'OrderController@add');
 
