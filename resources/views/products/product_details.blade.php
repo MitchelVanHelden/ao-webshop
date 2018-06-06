@@ -14,7 +14,11 @@
 						<li>{{ $products->volume }}</li>
 						<li>€{{ $products->price }}</li>
                     </ul>
-                    <a class="btn btn-dark" href="{{ action('OrderController@add', $products->id) }}">Add to shopping cart</a>
+
+
+                    <a class="btn btn-dark" href="{{ action('CartController@getProduct', $products->id) }}">Add to cart</a>
+                    <a class="btn btn-dark" href="{{ action('CartController@getShoppingCart') }}">To Cart</a>
+
                 </div>
             </div>
         </div>

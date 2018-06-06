@@ -31,5 +31,7 @@ Route::get('/home', 'HomeController@index')->name('home');
  Route::get('products/{id}/details', 'ProductsController@display');
 
  //voor shoppingcart
-Route::get('products/{id}', 'OrderController@add');
+Route::get('products/{id}', 'CartController@getProduct');
+Route::get('/addProduct', 'CartController@addProduct');
+Route::get('shopping-cart', 'CartController@getShoppingCart');
 

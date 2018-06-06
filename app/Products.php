@@ -10,4 +10,5 @@ class Products extends Model
     {
     	return $this->belongsToMany('App\Categories');
     }
+
 }
